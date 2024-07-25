@@ -22,10 +22,21 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  width: 100%;
   min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
 }
 
-
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
 
 
