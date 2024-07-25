@@ -9,10 +9,10 @@ import Zoom from "../svg/Zoom";
 
 export default function Home() {
   return (
-    <div className="bg-[#F1F1F3] w-[100vw] h-[100%] flex flex-col items-center p-3 text-black">
+    <div className="bg-[#F1F1F3]  h-[100%] flex flex-col items-center justify-center text-black p-3">
       {/* banner */}
-      <div className="flex items-center bg-[#FF9500] rounded-lg p-4 text-center text-sm	">
-        <img src="/icons/speaker.png" className="w-[15px]" />
+      <div className="flex items-center bg-[#FF9500] rounded-lg p-4 text-center text-sm	w-full">
+        {/* <img src="/icons/speaker.png" className="w-[15px]" /> */}
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <img
           src="/icons/arrow.png"
@@ -32,7 +32,7 @@ export default function Home() {
       <hr className="w-full h-[2px] mt-4 bg-gray-200 border-1 dark:bg-gray-700" />
 
       {/* titre */}
-      <div className="bg-white h-16 w-full flex justify-center items-center mt-11">
+      <div className="bg-white h-16 w-full flex justify-center items-center mt-11 rounded-lg">
         <p className="text-base font-bold	">
           <span className="text-[#FF9500]">Unlock</span> Your Creative Potential
         </p>
@@ -114,7 +114,7 @@ export default function Home() {
       </div>
 
       {/* cards */}
-      <div className="bg-white h-[293px] w-full mb-5 rounded-xl p-7 flex flex-col">
+      <div className="bg-white min-h-[293px] w-full mb-5 rounded-xl p-7 flex flex-col">
         <p className="text-4xl font-bold text-right mb-6">01</p>
         <p className="text-xl font-bold mb-3">Flexible Learning Schedule</p>
         <p className="mb-8">
@@ -127,7 +127,7 @@ export default function Home() {
       <div className="bg-white h-[293px] w-full mb-5 rounded-xl p-7 flex flex-col">
         <p className="text-4xl font-bold text-right mb-6">02</p>
         <p className="text-xl font-bold mb-3">Expert Instruction</p>
-        <p className="a">
+        <p className="mb-8">
           Learn from industry experts who have hands-on experience in design and
           development.
         </p>
