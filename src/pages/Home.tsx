@@ -22,7 +22,7 @@ export default function Home() {
     <div className="flex flex-col bg-[#F1F1F3] text-black">
       <div className="bg-[#F1F1F3]  h-[100%] flex flex-col items-center justify-center text-black p-3 md:p-10 lg:p-20">
         {/* banner */}
-        <div className="flex items-center bg-[#FF9500] rounded-lg p-4 text-center text-sm	w-full">
+        <div className="flex items-center justify-center bg-[#FF9500] rounded-lg p-4 text-center text-sm	w-full">
           {/* <img src="/icons/speaker.png" className="w-[15px]" /> */}
           <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
           <img
@@ -190,7 +190,7 @@ export default function Home() {
               <Arrow />
             </button>
           </div>
-          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col">
+          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col">
             <p className="text-4xl font-bold text-right mb-6">04</p>
             <p className="text-xl font-bold mb-3">Updated Curriculum</p>
             <p className="mb-8">
@@ -218,7 +218,7 @@ export default function Home() {
 
         {/* Cards */}
         <div className="md:flex md:flex-row  md:flex-wrap">
-          <div className="bg-white w-full md:w-[49%] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
+          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
             <img src="/Untitled1.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -240,7 +240,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col  md:mr-0 lg:mr-3">
+          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col  md:mr-0 lg:mr-3">
             <img src="/Untitled2.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -262,7 +262,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col md:mr-3 lg:mr-3 ">
+          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 lg:mr-3 ">
             <img src="/Untitled3.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -284,7 +284,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col md:mr-0 lg:mr-3">
+          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-0 lg:mr-3">
             <img src="/Untitled4.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -308,7 +308,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[413px] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
+          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
             <img src="/Untitled5.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -434,7 +434,7 @@ export default function Home() {
         </div>
 
         {/* cards */}
-        <div className="md:flex md:flex-row">
+        <div className="md:flex md:flex-row lg:w-full">
           <div className="bg-white w-full mb-5 rounded-xl md:rounded-none p-7 flex flex-col">
             <div className="bg-[#F1F1F3] w-full  rounded-xl p-7 flex flex-col">
               <button className="bg-[#FFF9F0] rounded-md border-2 border-[#FFEACC] py-2 font-medium">
@@ -585,7 +585,7 @@ export default function Home() {
             </div>
             <div className="lg:w-[55%] ">
               <div className="flex flex-col items-center rounded-xl border-2 border-[#F1F1F3] p-6 mb-5">
-                <div className="flex flex-row items-start">
+                <div className="flex flex-row items-start w-full justify-between">
                   <p className="c">Can I enroll in multiple courses at once?</p>
                   <div className="bg-[#FFF4E5] p-2 mr-2 rounded">
                     <Close />
@@ -609,7 +609,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-center rounded-xl border-2 border-[#F1F1F3] p-6">
-                <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center w-full justify-between">
                   <p className="c">Can I enroll in multiple courses at once?</p>
                   <div className="bg-[#FFF4E5] p-2 mr-2 rounded">
                     <Plus />
