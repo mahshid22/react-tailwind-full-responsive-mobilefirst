@@ -145,8 +145,8 @@ export default function Home() {
         </div>
 
         {/* cards */}
-        <div className="md:flex md:flex-row md:flex-wrap md:justify-start mb-10 md:mb-24">
-          <div className="bg-white min-h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col md:mr-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-stretch lg:justify-around lg:px-0 mb-10">
+          <div className="bg-white min-h-[293px]   rounded-xl p-7 flex flex-col">
             <p className="text-4xl font-bold text-right mb-6">01</p>
             <p className="text-xl font-bold mb-3">Flexible Learning Schedule</p>
             <p className="mb-8">
@@ -157,7 +157,7 @@ export default function Home() {
               <Arrow />
             </button>
           </div>
-          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col md:mr-4">
+          <div className="bg-white min-h-[293px]   rounded-xl p-7 flex flex-col ">
             <p className="text-4xl font-bold text-right mb-6">02</p>
             <p className="text-xl font-bold mb-3">Expert Instruction</p>
             <p className="mb-8">
@@ -168,7 +168,7 @@ export default function Home() {
               <Arrow />
             </button>
           </div>
-          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col md:mr-4">
+          <div className="bg-white min-h-[293px]   rounded-xl p-7 flex flex-col ">
             <p className="text-4xl font-bold text-right mb-6">03</p>
             <p className="text-xl font-bold mb-3">Diverse Course Offerings</p>
             <p className="mb-8">
@@ -179,7 +179,7 @@ export default function Home() {
               <Arrow />
             </button>
           </div>
-          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col md:mr-4">
+          <div className="bg-white min-h-[293px]   rounded-xl p-7 flex flex-col ">
             <p className="text-4xl font-bold text-right mb-6">04</p>
             <p className="text-xl font-bold mb-3">Updated Curriculum</p>
             <p className="mb-8">
@@ -190,7 +190,7 @@ export default function Home() {
               <Arrow />
             </button>
           </div>
-          <div className="bg-white h-[293px] w-full md:w-[320px] lg:w-[395px] mb-5 rounded-xl p-7 flex flex-col">
+          <div className="bg-white min-h-[293px]   rounded-xl p-7 flex flex-col">
             <p className="text-4xl font-bold text-right mb-6">04</p>
             <p className="text-xl font-bold mb-3">Updated Curriculum</p>
             <p className="mb-8">
@@ -217,8 +217,8 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="md:flex md:flex-row  md:flex-wrap">
-          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 items-stretch lg:justify-around  lg:px-0 mb-10">
+          <div className="bg-white  mb-5 rounded-xl p-7 flex flex-col ">
             <img src="/Untitled1.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -240,7 +240,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col  md:mr-0 lg:mr-3">
+          <div className="bg-white  mb-5 rounded-xl p-7 flex flex-col">
             <img src="/Untitled2.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -262,7 +262,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 lg:mr-3 ">
+          <div className="bg-white  mb-5 rounded-xl p-7 flex flex-col">
             <img src="/Untitled3.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -284,7 +284,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-0 lg:mr-3">
+          <div className="bg-white  mb-5 rounded-xl p-7 flex flex-col">
             <img src="/Untitled4.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -308,7 +308,7 @@ export default function Home() {
             <button className="bg-[#F1F1F3] py-3 rounded-md">Get it Now</button>
           </div>
 
-          <div className="bg-white w-full md:w-[49%] lg:w-[45%] xl:w-[32%] mb-5 rounded-xl p-7 flex flex-col md:mr-3 ">
+          <div className="bg-white  mb-5 rounded-xl p-7 flex flex-col ">
             <img src="/Untitled5.png" alt="" className="rounded-md mb-6" />
             <div className="lg:flex lg:fle-row lg:justify-between lg:items-center lg:mb-3">
               <div className="flex flex-row mb-3 lg:mb-0">
@@ -347,8 +347,8 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="lg:flex lg:flex-row lg:flex-wrap lg:justify-start lg:mb-20">
-          <div className="bg-white w-full lg:w-[48%] mr-3 mb-5 rounded-xl p-7 flex flex-col">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 mb-10">
+          <div className="bg-white  rounded-xl p-7 flex flex-col">
             <p className="mb-8">
               The web design course provided a solid foundation for me. The
               instructors were knowledgeable and supportive, and the interactive
@@ -370,7 +370,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white w-full lg:w-[48%] mr-3 mb-5 rounded-xl p-7 flex flex-col">
+          <div className="bg-white  rounded-xl p-7 flex flex-col">
             <p className="mb-8">
               The UI/UX design course exceeded my expectations. The instructor's
               expertise and practical assignments helped me improve my design
@@ -392,7 +392,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white w-full lg:w-[48%] mr-3 mb-5 rounded-xl p-7 flex flex-col">
+          <div className="bg-white  rounded-xl p-7 flex flex-col">
             <p className="mb-8">
               The mobile app development course was fantastic! The step-by-step
               tutorials and hands-on projects helped me grasp the concepts
