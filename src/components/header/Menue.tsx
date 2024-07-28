@@ -11,7 +11,7 @@ export default function Menue() {
   return (
     <div className="flex items-center justify-end w-full mt-3 md:justify-between">
       <div className="max-md:hidden flex">
-        <img src="/logo.png" alt="" className="w-[45px] h-[45px] rounded-md" />
+        <img src="/logo.png" alt="" className="w-[45px] h-[45px] rounded-md mr-5" />
         <button
           className={`${
             location.pathname === "/" ? activeStyle : ""

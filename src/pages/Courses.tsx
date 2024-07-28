@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Divider from "../components/divider/Divider";
 
 export default function Courses() {
@@ -27,9 +28,10 @@ export default function Courses() {
               visually appealing and user-friendly websites.
             </p>
           </div>
-          <button className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6">
+          <Link to={`/courses/1`} className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6">View Course</Link>
+          {/* <button className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6" >
             View Course
-          </button>
+          </button> */}
         </div>
         <div className="grid grid-cols-3 gap-3 lg:gap-5 mb-6">
           <img src="/course/Untitled.png" alt="" className="rounded-md" />
