@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 // import "./App.css";
 import MainLayout from "./layouts/MainLayout";
+import AboutUs from "./pages/AboutUs";
 import Course from "./pages/Course";
 import Courses from "./pages/Courses";
 import Home from "./pages/Home";
@@ -12,6 +13,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:courseId" element={<Course />} />
       </Route>

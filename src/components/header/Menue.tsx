@@ -36,6 +36,7 @@ export default function Menue() {
           className={`${
             location.pathname === "/aboutus" ? activeStyle : ""
           } "md:mx-2 p-3 rounded-md border-2"`}
+          onClick={() => nav(`/aboutus`)}
         >
           About Us
         </button>
@@ -48,7 +49,7 @@ export default function Menue() {
         </button>
         <button
           className={`${
-            location.pathname === "/aboutus" ? activeStyle : ""
+            location.pathname === "/pricing" ? activeStyle : ""
           } "md:mx-2 p-3 rounded-md border-2"`}
         >
           Pricing
