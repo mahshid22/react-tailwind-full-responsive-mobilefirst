@@ -1,17 +1,21 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { useLocation, useMatch, useNavigate } from "react-router-dom";
 
 const activeStyle = " bg-[#c9bcbc]";
 
 export default function Menue() {
   const nav = useNavigate();
   const location = useLocation();
+  const match = useMatch("/courses/*");
 
   return (
     <div className="flex items-center justify-end w-full mt-3 md:justify-between">
       <div className="max-md:hidden flex">
-        <img src="/logo.png" alt="" className="w-[45px] h-[45px] rounded-md mr-5" />
+        <img
+          src="/logo.png"
+          alt=""
+          className="w-[45px] h-[45px] rounded-md mr-5"
+        />
         <button
           className={`${
             location.pathname === "/" ? activeStyle : ""
@@ -22,7 +26,7 @@ export default function Menue() {
         </button>
         <button
           className={`${
-            location.pathname === "/courses" ? activeStyle : ""
+            location.pathname === "/courses" || match ? activeStyle : ""
           } "md:mx-2 p-3 rounded-md border-2"`}
           onClick={() => nav(`/courses`)}
         >

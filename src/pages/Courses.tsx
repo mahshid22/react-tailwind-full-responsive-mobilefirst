@@ -19,19 +19,21 @@ export default function Courses() {
       </div>
       <Divider style={"mb-16"} />
       <div className="w-full bg-white p-6 rounded-lg mb-6">
-        <div className="lg:flex lg:flex-row lg:justify-between">
-          <div className="c">
+        <div className="lg:flex lg:flex-row lg:justify-between  lg:items-center">
+          <div className="lg:max-w-[80%]">
             <p className="text-lg font-bold mb-2">Web Design Fundamentals</p>
-            <p className="text-sm mb-5">
+            <p className="text-sm mb-5 ">
               Learn the fundamentals of web design, including HTML, CSS, and
               responsive design principles. Develop the skills to create
               visually appealing and user-friendly websites.
             </p>
           </div>
-          <Link to={`/courses/1`} className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6">View Course</Link>
-          {/* <button className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6" >
+          <Link
+            to={`/courses/1`}
+            className="w-fit h-fit flex py-3 px-4 rounded-md border-2 bg-[#F1F1F3] mb-6 lg:mb-0"
+          >
             View Course
-          </button> */}
+          </Link>
         </div>
         <div className="grid grid-cols-3 gap-3 lg:gap-5 mb-6">
           <img src="/course/Untitled.png" alt="" className="rounded-md" />
@@ -103,8 +105,8 @@ export default function Courses() {
         </div>
       </div>
       <div className="w-full bg-white p-6 rounded-lg mb-6">
-        <div className="lg:flex lg:flex-row lg:justify-between">
-          <div className="c">
+        <div className="lg:flex lg:flex-row lg:justify-between  lg:items-center">
+          <div className="lg:max-w-[80%]">
             <p className="text-lg font-bold mb-2">UI/UX Design</p>
             <p className="text-sm mb-5">
               Learn the fundamentals of web design, including HTML, CSS, and
@@ -112,9 +114,12 @@ export default function Courses() {
               visually appealing and user-friendly websites.
             </p>
           </div>
-          <button className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6">
+          <Link
+            to={`/courses/101`}
+            className="w-fit h-fit flex py-3 px-4 rounded-md border-2 bg-[#F1F1F3] mb-6 lg:mb-0"
+          >
             View Course
-          </button>
+          </Link>
         </div>
         <div className="grid grid-cols-3 gap-3 lg:gap-5 mb-6">
           <img src="/course/Untitled.png" alt="" className="rounded-md" />
@@ -186,8 +191,8 @@ export default function Courses() {
         </div>
       </div>
       <div className="w-full bg-white p-6 rounded-lg mb-6">
-        <div className="lg:flex lg:flex-row lg:justify-between">
-          <div className="c">
+        <div className="lg:flex lg:flex-row lg:justify-between  lg:items-center">
+          <div className="lg:max-w-[80%]">
             <p className="text-lg font-bold mb-2">Mobile App Development</p>
             <p className="text-sm mb-5">
               Learn the fundamentals of web design, including HTML, CSS, and
@@ -195,9 +200,12 @@ export default function Courses() {
               visually appealing and user-friendly websites.
             </p>
           </div>
-          <button className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6">
+          <Link
+            to={`/courses/56`}
+            className="py-4 px-5 rounded-md border-2 bg-[#F1F1F3] mb-6"
+          >
             View Course
-          </button>
+          </Link>
         </div>
         <div className="grid grid-cols-3 gap-3 lg:gap-5 mb-6">
           <img src="/course/Untitled.png" alt="" className="rounded-md" />

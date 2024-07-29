@@ -13,7 +13,7 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/courses/:contactId" element={<Course />} />
+        <Route path="/courses/:courseId" element={<Course />} />
       </Route>
     </Routes>
   );
