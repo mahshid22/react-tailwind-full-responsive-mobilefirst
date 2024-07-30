@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, useMatch, useNavigate } from "react-router-dom";
+import Logo from "../../svg/Logo";
 
 const activeStyle = " bg-[#c9bcbc]";
 
@@ -11,11 +12,7 @@ export default function Menue() {
   return (
     <div className="flex items-center justify-end w-full mt-3 md:justify-between">
       <div className="max-md:hidden flex">
-        <img
-          src="/logo.png"
-          alt=""
-          className="w-[45px] h-[45px] rounded-md mr-5"
-        />
+        <Logo />
         <button
           className={`${
             location.pathname === "/" ? activeStyle : ""
@@ -51,6 +48,7 @@ export default function Menue() {
           className={`${
             location.pathname === "/pricing" ? activeStyle : ""
           } "md:mx-2 p-3 rounded-md border-2"`}
+          onClick={() => nav(`/pricing`)}
         >
           Pricing
         </button>
