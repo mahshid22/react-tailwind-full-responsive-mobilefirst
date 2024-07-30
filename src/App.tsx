@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Course from "./pages/Course";
 import Courses from "./pages/Courses";
 import Home from "./pages/Home";
+import LogIn from "./pages/LogIn";
 import Pricing from "./pages/Pricing";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/login" element={<LogIn />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:courseId" element={<Course />} />
       </Route>

@@ -57,7 +57,9 @@ export default function Menue() {
         <button className="bg-white py-4 px-5 rounded-md border-2 w-[99px]">
           Sign Up
         </button>
-        <button className="bg-[#FF9500] py-4 px-5 rounded-md w-[99px] ml-2">
+        <button className="bg-[#FF9500] py-4 px-5 rounded-md w-[99px] ml-2"
+        onClick={() => nav(`/login`)}
+        >
           Log In
         </button>
       </div>
