@@ -21,6 +21,7 @@ export default function Menue() {
         >
           Home
         </button>
+
         <button
           className={`${
             location.pathname === "/courses" || match ? activeStyle : ""
@@ -29,6 +30,7 @@ export default function Menue() {
         >
           Courses
         </button>
+
         <button
           className={`${
             location.pathname === "/aboutus" ? activeStyle : ""
@@ -37,6 +39,7 @@ export default function Menue() {
         >
           About Us
         </button>
+        
         <button
           className={`${
             location.pathname === "/contacts" ? activeStyle : ""

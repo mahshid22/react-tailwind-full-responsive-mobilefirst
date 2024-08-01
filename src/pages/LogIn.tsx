@@ -1,11 +1,13 @@
 import React from "react";
 import Divider from "../components/divider/Divider";
 import Google from "../svg/Google";
+import LeftArrow from "../svg/LeftArrow";
+import RightArrow from "../svg/RightArrow";
 
 export default function LogIn() {
   return (
-    <div>
-      <div className="bg-white p-7">
+    <div className="lg:grid lg:grid-cols-2 lg:gap-20 ">
+      <div className="bg-white p-7 mb-12 lg:order-last">
         <p className="text-3xl font-bold mb-2">Login</p>
         <p className="text-sm mb-7">
           Welcome back! Please log in to access your account.
@@ -64,9 +66,56 @@ export default function LogIn() {
           <Google />
           <p className="pl-2">Login with Google</p>
         </button>
-        <p className="text-center">Don't have an account? <span className="font-medium cursor-pointer"><a>Sign Up</a></span></p>
+        <p className="text-center">
+          Don't have an account?{" "}
+          <span className="font-medium cursor-pointer">
+            <a>Sign Up</a>
+          </span>
+        </p>
       </div>
-      <div className="c"></div>
+      <div className="c">
+        <div className="mb-10">
+          <p className="font-bold text-3xl mb-1">Students Testimonials</p>
+          <p className="text-sm">
+            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
+            elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum
+            eget habitasse in velit fringilla feugiat senectus in.
+          </p>
+        </div>
+        <div className="c">
+          <div className="bg-white p-7 mb-5">
+            <p className="text-sm">
+              The web design course provided a solid foundation for me. The
+              instructors were knowledgeable and supportive, and the interactive
+              learning environment was engaging. I highly recommend it!
+            </p>
+            <Divider />
+            <div className="flex flex-row justify-between p-5">
+              <div className="flex flex-row justify-center items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-12 h-12 rounded-md mr-2"
+                />
+                <p className="">Sarah L</p>
+              </div>
+              <button className="bg-[#F1F1F3] p-3 rounded-md flex flex-row justify-center items-center">
+                Read Full Story
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex flex-row items-center">
+              <button className="bg-white p-3 rounded-md flex flex-row justify-center items-center mr-2">
+                <LeftArrow />
+              </button>
+              <button className="bg-white p-3 rounded-md flex flex-row justify-center items-center">
+                <RightArrow />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
