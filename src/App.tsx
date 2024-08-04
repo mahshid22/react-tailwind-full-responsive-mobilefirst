@@ -9,6 +9,7 @@ import Courses from "./pages/Courses";
 import Home from "./pages/Home";
 import LogIn from "./pages/LogIn";
 import Pricing from "./pages/Pricing";
+import SignUp from "./pages/SignUp";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/login" element={<LogIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:courseId" element={<Course />} />
       </Route>

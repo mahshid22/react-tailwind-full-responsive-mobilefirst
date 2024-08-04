@@ -12,7 +12,9 @@ export default function Menue() {
   return (
     <div className="flex items-center justify-end w-full mt-3 md:justify-between">
       <div className="max-md:hidden flex">
-        <Logo />
+        <div className="md:mr-2 lg:mr-10">
+          <Logo />
+        </div>
         <button
           className={`${
             location.pathname === "/" ? activeStyle : ""
@@ -39,7 +41,7 @@ export default function Menue() {
         >
           About Us
         </button>
-        
+
         <button
           className={`${
             location.pathname === "/contacts" ? activeStyle : ""
@@ -57,11 +59,17 @@ export default function Menue() {
         </button>
       </div>
       <div className="">
-        <button className="bg-white py-4 px-5 rounded-md border-2 w-[99px]">
+        <button className={`${
+            location.pathname === "/signup" ? "bg-[#FF9500]" : "bg-white"
+          } py-4 px-5 rounded-md border-2 w-[99px]`}
+        onClick={() => nav(`/signup`)}>
           Sign Up
         </button>
-        <button className="bg-[#FF9500] py-4 px-5 rounded-md w-[99px] ml-2"
-        onClick={() => nav(`/login`)}
+        <button
+          className={`${
+            location.pathname === "/login" ? "bg-[#FF9500]" : "bg-white"
+          } py-4 px-5 rounded-md border-2 w-[99px]`}
+          onClick={() => nav(`/login`)}
         >
           Log In
         </button>

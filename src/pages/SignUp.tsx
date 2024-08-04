@@ -5,7 +5,7 @@ import Google from "../svg/Google";
 import LeftArrow from "../svg/LeftArrow";
 import RightArrow from "../svg/RightArrow";
 
-export default function LogIn() {
+export default function SignUp() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const datas = [
     { src: "/avatar.png", name: "Sara L" },
@@ -25,11 +25,21 @@ export default function LogIn() {
   return (
     <div className="lg:grid lg:grid-cols-2 lg:gap-20 ">
       <div className="bg-white p-7 mb-12 lg:order-last">
-        <p className="text-3xl font-bold mb-2">Login</p>
+        <p className="text-3xl font-bold mb-2">Sign Up</p>
         <p className="text-sm mb-7">
-          Welcome back! Please log in to access your account.
+          Create an account to unlock exclusive features.
         </p>
         <form id="form1" className="flex flex-col mb-6">
+          <label htmlFor="fname" className="font-medium mb-2">
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your Name"
+            className="p-5 border-2 rounded-lg bg-[#FCFCFD] mb-5"
+          />
           <label htmlFor="fname" className="font-medium mb-2">
             Email
           </label>
@@ -48,9 +58,8 @@ export default function LogIn() {
             id="fname"
             name="fname"
             placeholder="Enter your Password"
-            className="p-5 border-2 rounded-lg bg-[#FCFCFD] mb-2"
+            className="p-5 border-2 rounded-lg bg-[#FCFCFD] mb-6"
           />
-          <p className="text-right text-sm">Forgot Password?</p>
           <div className="flex flex-row mb-5">
             <input
               className="text-violet-500 focus:ring-violet-300 border-red-700 peer rounded-lg w-6 h-6 mr-2"
@@ -59,14 +68,21 @@ export default function LogIn() {
               type="checkbox"
               value="custom-checkbox"
             />
-            <label className=" cursor-pointer  " htmlFor="custom-checkbox">
-              Remember Me
+            <label className=" text-[#656567]" htmlFor="custom-checkbox">
+              I agree with{" "}
+              <a href="#" className="underline">
+                Terms of Use
+              </a>{" "}
+              and{" "}
+              <a href="#" className="underline">
+                Privacy Policy
+              </a>
             </label>
           </div>
 
           <input
             type="submit"
-            value="log in"
+            value="Sign Up"
             className="bg-[#FF9500] py-4 px-5 rounded-md w-full "
           />
         </form>
@@ -81,12 +97,12 @@ export default function LogIn() {
         </div>
         <button className="bg-[#F1F1F3] py-3 rounded-md flex flex-row justify-center items-center w-full p-4 mb-6">
           <Google />
-          <p className="pl-2">Login with Google</p>
+          <p className="pl-2">Sign Up with Google</p>
         </button>
         <p className="text-center">
-          Don't have an account?{" "}
+        Already have an account? {" "}
           <span className="font-medium cursor-pointer">
-            <a>Sign Up</a>
+            <a>Login</a>
           </span>
         </p>
       </div>
