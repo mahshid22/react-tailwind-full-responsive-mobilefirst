@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // import "./App.css";
 import MainLayout from "./layouts/MainLayout";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 import Course from "./pages/Course";
 import Courses from "./pages/Courses";
 import Home from "./pages/Home";
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courses/:courseId" element={<Course />} />
       </Route>

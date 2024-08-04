@@ -44,8 +44,9 @@ export default function Menue() {
 
         <button
           className={`${
-            location.pathname === "/contacts" ? activeStyle : ""
+            location.pathname === "/contactus" ? activeStyle : ""
           } "md:mx-2 p-3 rounded-md border-2"`}
+          onClick={() => nav(`/contactus`)}
         >
           contacts
         </button>
@@ -60,15 +61,15 @@ export default function Menue() {
       </div>
       <div className="">
         <button className={`${
-            location.pathname === "/signup" ? "bg-[#FF9500]" : "bg-white"
-          } py-4 px-5 rounded-md border-2 w-[99px]`}
+            location.pathname === "/signup" ? "bg-[#FF9500]  rounded-md border-2" : ""
+          } py-4 px-5 w-[99px]`}
         onClick={() => nav(`/signup`)}>
           Sign Up
         </button>
         <button
           className={`${
-            location.pathname === "/login" ? "bg-[#FF9500]" : "bg-white"
-          } py-4 px-5 rounded-md border-2 w-[99px]`}
+            location.pathname === "/login" ? "bg-[#FF9500] rounded-md border-2" : ""
+          } py-4 px-5  w-[99px]`}
           onClick={() => nav(`/login`)}
         >
           Log In
