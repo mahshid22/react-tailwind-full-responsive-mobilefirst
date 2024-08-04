@@ -80,7 +80,7 @@ export default function ContactUs() {
           <input
             type="submit"
             value="Send Your Message"
-            className="bg-[#FF9500] py-4 px-5 rounded-md w-full "
+            className="bg-[#FF9500] py-4 px-5 rounded-md w-full lg:self-center lg:w-auto "
           />
         </form>
         <Divider style="lg:hidden" />
